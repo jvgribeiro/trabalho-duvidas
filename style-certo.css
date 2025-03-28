@@ -1,0 +1,354 @@
+html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #292d3e;
+}
+.content {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar main main"
+    "footer footer footer";
+
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #292d3e;
+  margin: 0%;
+}
+
+/* Estilo do menu de anos*/
+.anos {
+  position: absolute;
+  display: inline-block;
+  top: 4rem;
+  right: 60rem;
+  color: #ffc107;
+  font-size: 20px;
+}
+
+/* Botão principal do menu */
+
+.anos > .anos-botao {
+  padding: 20px 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+}
+
+/* Lista de opções oculta  */
+
+.menu-anos {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 5px;
+  min-width: 150px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilizando os itens da lista */
+.menu-anos li {
+  padding: 10px;
+  border-bottom: 1px solid color(none);
+}
+
+.menu-anos li:last-child {
+  border-bottom: none;
+}
+
+/* Mudança de cor ao passar o mouse nos itens */
+.menu-anos li:hover {
+  background-color: #292d3e;
+}
+
+/* Exibir as opções ao passar o mouse */
+.anos:hover .menu-anos {
+  display: block;
+}
+
+.menu-anos li a {
+  text-decoration: none;
+  color: #ffc107;
+  display: block;
+}
+
+.menu-anos li a:hover {
+  background-color: #292d3e;
+}
+
+.genero {
+  position: absolute;
+  display: inline-block;
+  top: 4rem;
+  right: 45rem;
+  color: #ffc107;
+  font-size: 20px;
+}
+
+/* Botão principal do menu */
+
+.genero > .tipos {
+  padding: 20px 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+}
+
+/* Lista de opções oculta  */
+
+.menu-genero {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 5px;
+  min-width: 150px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilizando os itens da lista */
+.menu-genero li {
+  padding: 10px;
+  border-bottom: 1px solid color(none);
+}
+
+.menu-generos li:last-child {
+  border-bottom: none;
+}
+
+/* Mudança de cor ao passar o mouse nos itens */
+.menu-generos li:hover {
+  background-color: #292d3e;
+}
+
+/* Exibir as opções ao passar o mouse */
+.genero:hover .menu-genero {
+  display: block;
+}
+
+.menu-genero li a {
+  text-decoration: none;
+  color: #ffc107;
+  display: block;
+}
+
+.menu-genero li a:hover {
+  background-color: #292d3e;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.pesquisa {
+  position: absolute;
+  top: 4.5rem;
+  right: 11rem;
+  height: 30px;
+  width: 210px;
+  background-color: white;
+}
+
+#nome-filme {
+  position: absolute;
+  top: 3.4rem;
+  right: 9.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #f5a383;
+}
+
+button {
+  position: absolute;
+  top: 4.45rem;
+  right: 9.5rem;
+  height: 37px;
+  width: 50px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* Fim do cabeçalho e seus elementos*/
+
+/* Começo do main e seus elementos */
+.main {
+  grid-area: main;
+  background-color: #292d3e;
+  width: 85%;
+  min-height: 100vh; /* Garante que o main tenha altura suficiente */
+  padding-bottom: 100px; /* Adiciona espaço para o footer */
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-template-rows: 3fr 3fr 3fr 3fr;
+}
+
+.main .filme {
+  margin: 30px 20px auto;
+  padding: 4px;
+  border-radius: 10px;
+  height: 350px;
+  width: 350px;
+  width: 100%;
+  height: 550px;
+}
+
+.main img {
+  height: 375px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.main h3 {
+  color: #f5a383;
+  padding: 8px;
+  height: 20px;
+  width: 25px;
+}
+
+/* Fim do Main */
+
+.aside {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+#logo img {
+  padding: 20px;
+  margin: 20px;
+}
+
+.aside p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  padding: 20px;
+  margin: 20px;
+  color: #f5a383;
+}
+
+.futuro-filme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 10px;
+}
+
+.futuro-filme .filmes-2025 {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Fim do aside */
+
+.footer {
+  grid-area: footer;
+  margin: 25px;
+  top: 200%;
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  padding: 15px 0;
+}
+
+#twitter {
+  height: 25px;
+  width: 40px;
+  position: absolute;
+  top: 3rem;
+  right: 93rem;
+}
+
+#instagram {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 3rem;
+  right: 96rem;
+}
+
+.contato {
+  position: absolute;
+  top: 3rem;
+  right: 20rem;
+  color: white;
+  font-size: 26px;
+}
+
+.footer nav a {
+  color: white;
+
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer nav a:hover {
+  text-decoration: underline;
+}
+
+.footer nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  padding: 20px;
+  margin-top: -10rem;
+}
+
+.icon {
+  position: absolute;
+  top: 10.5rem;
+  right: 62rem;
+  height: 25px;
+  width: 25px;
+}
+
+.footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+}
+
+.sobre {
+  position: absolute;
+  top: 5rem;
+  right: 61.3rem;
+  height: 25px;
+  width: 25px;
+}
+
+.direitos {
+  position: absolute;
+  top: 16rem;
+  right: 66rem;
+  height: 25px;
+  width: 25px;
+}
