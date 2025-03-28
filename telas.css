@@ -1,0 +1,520 @@
+@media screen and (max-width: 550px) {
+  .content {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar main main"
+      "footer footer footer";
+    grid-template-rows: auto 1fr auto auto;
+    min-height: 100vh;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #292d3e;
+  }
+  .header {
+    margin: 0%;
+  }
+  .anos {
+    position: absolute;
+    display: inline-block;
+    top: 5.7rem;
+    right: 9rem;
+    color: #ffc107;
+    font-size: 10px;
+  }
+
+  /* Botão principal do menu */
+
+  .anos > .anos-botao {
+    padding: 15px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+  }
+
+  /* Lista de opções oculta  */
+
+  .menu-anos {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    min-width: 70px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Estilizando os itens da lista */
+  .menu-anos li {
+    padding: 10px;
+    border-bottom: 1px solid color(none);
+  }
+
+  .menu-anos li:last-child {
+    border-bottom: none;
+  }
+
+  /* Mudança de cor ao passar o mouse nos itens */
+  .menu-anos li:hover {
+    background-color: #292d3e;
+  }
+
+  /* Exibir as opções ao passar o mouse */
+  .anos:hover .menu-anos {
+    display: block;
+  }
+
+  .menu-anos li a {
+    text-decoration: none;
+    color: #ffc107;
+    display: block;
+  }
+
+  .genero {
+    position: absolute;
+    display: inline-block;
+    top: 5.7rem;
+    right: 4rem;
+    color: #ffc107;
+    font-size: 10px;
+  }
+
+  /* Botão principal do menu */
+
+  .genero > .tipos {
+    padding: 15px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+  }
+
+  /* Lista de opções oculta  */
+
+  .menu-genero {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    min-width: 70px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Estilizando os itens da lista */
+  .menu-genero li {
+    padding: 10px;
+    border-bottom: 1px solid color(none);
+  }
+
+  .menu-generos li:last-child {
+    border-bottom: none;
+  }
+
+  /* Mudança de cor ao passar o mouse nos itens */
+  .menu-generos li:hover {
+    background-color: #292d3e;
+  }
+
+  /* Exibir as opções ao passar o mouse */
+  .genero:hover .menu-genero {
+    display: block;
+  }
+
+  .menu-genero li a {
+    text-decoration: none;
+    color: #ffc107;
+    display: block;
+  }
+
+  .menu-genero li a:hover {
+    background-color: #292d3e;
+  }
+  .pesquisa {
+    position: absolute;
+    top: 3.7rem;
+    right: 4rem;
+    height: 15px;
+    width: 150px;
+    background-color: white;
+  }
+  button {
+    position: absolute;
+    top: 3.7rem;
+    right: 2.3rem;
+    height: 20px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  #nome-filme {
+    position: absolute;
+    top: 2.7rem;
+    right: 2.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #f5a383;
+    font-size: 12px;
+  }
+  .header img {
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+  }
+
+  body img {
+    width: 120px;
+    height: 120px;
+  }
+  .main {
+    min-height: 100vh;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 210px 50px;
+  }
+
+  .main .filme {
+    margin: 45px 1px 0.1px 10px;
+    padding: 0.1px;
+    border-radius: 10px;
+    height: 10px;
+    width: 10px;
+    width: 100%;
+  }
+
+  .main img {
+    margin: 20px;
+    padding: 1px;
+    border-radius: 10px;
+    height: 130px;
+    width: 130px;
+  }
+
+  .aside {
+    margin: 20px;
+    padding: 1px;
+    position: absolute;
+    top: 200%;
+    border-radius: 10px;
+  }
+  .aside .texto-aside {
+    font-size: 25px;
+  }
+  .aside .filmes-2025 {
+    margin: 20px;
+    padding: 1px;
+    border-radius: 10px;
+    height: 175px;
+    width: 150px;
+  }
+
+  .footer {
+    grid-area: footer;
+    margin: 1px auto auto 300px;
+    top: 330%;
+    height: 20%;
+    width: 100%;
+    right: -10%;
+    padding: 15px 0;
+  }
+
+  .footer p {
+    font-size: 10px;
+    position: absolute;
+    top: 114%;
+  }
+
+  .footer #twitter,
+  .footer #instagram {
+    position: relative; /* Altere para relative */
+    top: 300%; /* Ajuste a posição */
+    right: 300%;
+    height: 25px; /* Certifique-se de que a altura está correta */
+    width: 100px; /* Para preservar proporções */
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 1050px) {
+  .content {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar main main"
+      "footer footer footer";
+    grid-template-rows: auto 1fr auto auto;
+    min-height: 100vh;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #292d3e;
+  }
+  .header {
+    margin: 0%;
+  }
+
+  .header #logo-header {
+    height: 200px;
+    width: 200px;
+  }
+
+  .anos {
+    position: absolute;
+    display: inline-block;
+    top: 5.7rem;
+    right: 35rem;
+    color: #ffc107;
+    font-size: 23px;
+  }
+
+  /* Botão principal do menu */
+
+  .anos > .anos-botao {
+    padding: 30px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+  }
+
+  /* Lista de opções oculta  */
+
+  .menu-anos {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    min-width: 130px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Estilizando os itens da lista */
+  .menu-anos li {
+    padding: 10px;
+    border-bottom: 1px solid color(none);
+  }
+
+  .menu-anos li:last-child {
+    border-bottom: none;
+  }
+
+  /* Mudança de cor ao passar o mouse nos itens */
+  .menu-anos li:hover {
+    background-color: #292d3e;
+  }
+
+  /* Exibir as opções ao passar o mouse */
+  .anos:hover .menu-anos {
+    display: block;
+  }
+
+  .menu-anos li a {
+    text-decoration: none;
+    color: #ffc107;
+    display: block;
+  }
+
+  .genero {
+    position: absolute;
+    display: inline-block;
+    top: 5.7rem;
+    right: 23rem;
+    color: #ffc107;
+    font-size: 23px;
+  }
+
+  /* Botão principal do menu */
+
+  .genero > .tipos {
+    padding: 30px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+  }
+
+  /* Lista de opções oculta  */
+
+  .menu-genero {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    min-width: 130px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Estilizando os itens da lista */
+  .menu-genero li {
+    padding: 10px;
+    border-bottom: 1px solid color(none);
+  }
+
+  .menu-generos li:last-child {
+    border-bottom: none;
+  }
+
+  /* Mudança de cor ao passar o mouse nos itens */
+  .menu-generos li:hover {
+    background-color: #292d3e;
+  }
+
+  /* Exibir as opções ao passar o mouse */
+  .genero:hover .menu-genero {
+    display: block;
+  }
+
+  .menu-genero li a {
+    text-decoration: none;
+    color: #ffc107;
+    display: block;
+  }
+
+  .menu-genero li a:hover {
+    background-color: #292d3e;
+  }
+  .pesquisa {
+    position: absolute;
+    top: 3.7rem;
+    right: 6.8rem;
+    height: 35px;
+    width: 300px;
+    background-color: white;
+  }
+  button {
+    position: absolute;
+    top: 3.7rem;
+    right: 3.2rem;
+    height: 40px;
+    width: 60px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  #nome-filme {
+    position: absolute;
+    top: 2rem;
+    right: 7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #f5a383;
+    font-size: 20px;
+  }
+  .header img {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+  }
+
+  body img {
+    width: 120px;
+    height: 120px;
+  }
+  .main {
+    min-height: 100vh;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 210px 50px;
+  }
+
+  .main .filme h3 {
+    white-space: nowrap;
+  }
+
+  .main .filme {
+    margin: 45px 1px 0.1px 10px;
+    padding: 80px;
+    border-radius: 10px;
+    height: 10px;
+    width: 10px;
+    width: 100%;
+  }
+
+  .main img {
+    margin: 20px;
+    padding: 1px;
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+  }
+
+  .aside {
+    margin: 20px;
+    padding: 1px;
+    position: absolute;
+    top: 215%;
+    border-radius: 10px;
+    right: 22%;
+  }
+
+  .aside #logo {
+    height: 200px;
+    width: 200px;
+  }
+  .aside .texto-aside {
+    font-size: 40px;
+  }
+  .aside .filmes-2025 {
+    margin: 20px;
+    padding: 1px;
+    border-radius: 10px;
+    height: 300px;
+    width: 250px;
+  }
+
+  .footer {
+    grid-area: footer;
+    margin: 1px auto auto 300px;
+    top: 330%;
+    height: 20%;
+    width: 100%;
+    right: -10%;
+    padding: 15px 0;
+  }
+
+  .footer p {
+    font-size: 18px;
+    position: absolute;
+    top: 70%;
+    right: 70%;
+  }
+
+  .footer .icon {
+    position: absolute;
+    top: 29%;
+    right: 54%;
+  }
+  .footer .sobre {
+    position: absolute;
+    top: 0%;
+    right: 53%;
+  }
+
+  .footer .direitos {
+    position: absolute;
+    top: 59%;
+    right: 61%;
+  }
+}
