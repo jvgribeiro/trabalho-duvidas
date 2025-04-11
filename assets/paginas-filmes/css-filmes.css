@@ -1,0 +1,261 @@
+* {
+  background-color: #292d3e;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.anos {
+  position: absolute;
+  display: inline-block;
+  top: 4rem;
+  right: 60rem;
+  color: #ffc107;
+  font-size: 20px;
+}
+
+/* Botão principal do menu */
+
+.anos > .anos-botao {
+  padding: 20px 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+}
+
+/* Lista de opções oculta  */
+
+.menu-anos {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 5px;
+  min-width: 150px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilizando os itens da lista */
+.menu-anos li {
+  padding: 10px;
+  border-bottom: 1px solid color(none);
+}
+
+.menu-anos li:last-child {
+  border-bottom: none;
+}
+
+/* Mudança de cor ao passar o mouse nos itens */
+.menu-anos li:hover {
+  background-color: #292d3e;
+}
+
+/* Exibir as opções ao passar o mouse */
+.anos:hover .menu-anos {
+  display: block;
+}
+
+.menu-anos li a {
+  text-decoration: none;
+  color: #ffc107;
+  display: block;
+}
+
+.menu-anos li a:hover {
+  background-color: #292d3e;
+}
+
+.genero {
+  position: absolute;
+  display: inline-block;
+  top: 4rem;
+  right: 45rem;
+  color: #ffc107;
+  font-size: 20px;
+}
+
+/* Botão principal do menu */
+
+.genero > .tipos {
+  padding: 20px 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+}
+
+/* Lista de opções oculta  */
+
+.menu-genero {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 5px;
+  min-width: 150px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilizando os itens da lista */
+.menu-genero li {
+  padding: 10px;
+  border-bottom: 1px solid color(none);
+}
+
+.menu-generos li:last-child {
+  border-bottom: none;
+}
+
+/* Mudança de cor ao passar o mouse nos itens */
+.menu-generos li:hover {
+  background-color: #292d3e;
+}
+
+/* Exibir as opções ao passar o mouse */
+.genero:hover .menu-genero {
+  display: block;
+}
+
+.menu-genero li a {
+  text-decoration: none;
+  color: #ffc107;
+  display: block;
+}
+
+.menu-genero li a:hover {
+  background-color: #292d3e;
+}
+
+.pesquisa {
+  height: 30px;
+  width: 210px;
+  background-color: white;
+}
+
+#nome-filme {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #f5a383;
+}
+
+button {
+  height: 37px;
+  width: 50px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.col-4 img {
+  height: 250px;
+  width: 250px;
+}
+
+.col-3 img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.col-3 h3 {
+  text-align: center;
+  color: #f5a383;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+
+h1,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffc107;
+  font-weight: 600;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffc107;
+  font-weight: 400;
+}
+
+.futuro-filme img {
+  width: 70%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.texto-aside {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f5a383;
+}
+
+.aside {
+  padding: 40px;
+}
+
+.col-9 .row .col-3 img {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.aside p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#instagram,
+#twitter {
+  height: 25px;
+  width: 25px;
+}
+
+#logo-footer {
+  height: 250px;
+  width: 250px;
+}
+
+nav img {
+  height: 25px;
+  width: 25px;
+}
+
+nav a {
+  color: white;
+
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 1px;
+  padding: 10px;
+  margin-top: 10rem;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: #f5a383;
+}
+
+a {
+  text-decoration: none;
+}
