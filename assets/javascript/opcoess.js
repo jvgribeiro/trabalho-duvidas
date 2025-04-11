@@ -8,6 +8,7 @@ var filmes = filme.find(function (elem) {
 if (filmes) {
   document.getElementById("titulo").innerText = filmes.titulo;
   document.getElementById("imagem").src = filmes.imagem;
+  document.getElementById("imagem").alt = filmes.titulo;
   document.getElementById("sinopse").innerText = filmes.sinopse;
   document.getElementById("p_sinopse").innerText = filmes.p_sinopse;
   document.getElementById("elenco").innerText = filmes.elenco;
@@ -22,5 +23,5 @@ if (filmes) {
   document.getElementById("ator_5").innerText = filmes.ator_5;
   document.getElementById("p_ator_5").innerText = filmes.p_ator_5;
   document.getElementById("titulo_trailer").innerText = filmes.titulo_trailer;
-  document.getElementById("trailer").src = filmes.meuIFrame;
+  document.getElementById("meuIframe").src = filmes.meuIFrame;
 }

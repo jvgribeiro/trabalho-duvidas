@@ -1,36 +1,3 @@
-var iframe = document.getElementById("meuIframe");
-
-// Alterar o src, por exemplo:
-if (id == 1) {
-  iframe.src = "https://www.youtube.com/embed/K70MooI8vBE";
-} else if (id == 2) {
-  iframe.src = "https://www.youtube.com/embed/zaPcin5knJk";
-} else if (id == 3) {
-  iframe.src = "https://www.youtube.com/embed/9KZyUQpihsE";
-} else if (id == 4) {
-  iframe.src = "https://www.youtube.com/embed/BydjQP2aFd0";
-} else if (id == 5) {
-  iframe.src = "https://www.youtube.com/embed/R991B2-W4uo";
-} else if (id == 6) {
-  iframe.src = "https://www.youtube.com/embed/4e414vW9gFs";
-} else if (id == 7) {
-  iframe.src = "https://www.youtube.com/embed/F3OxA9Cz17A";
-} else if (id == 8) {
-  iframe.src = "https://www.youtube.com/embed/FU_bAopCcSE";
-} else if (id == 9) {
-  iframe.src = "https://www.youtube.com/embed/-YHVFM_8a-s";
-} else if (id == 10) {
-  iframe.src = "https://www.youtube.com/embed/_4is7I_ZxTg";
-} else if (id == 11) {
-  iframe.src = "https://www.youtube.com/embed/HBsM5-G-Wco";
-} else if (id == 12) {
-  iframe.src = "https://www.youtube.com/embed/4cajBzu_N-g";
-}
-
-// Ou mudar o tamanho:
-iframe.width = "560";
-iframe.height = "350";
-
 const filme = [
   {
     id: 1,
@@ -496,3 +463,36 @@ Ela quer devorar.`,
     meuIframe: iframe,
   },
 ];
+
+var iframe = document.getElementById("meuIframe");
+
+// Alterar o src, por exemplo:
+if (id == 1) {
+  iframe.src = "https://www.youtube.com/embed/K70MooI8vBE";
+} else if (id == 2) {
+  iframe.src = "https://www.youtube.com/embed/zaPcin5knJk";
+} else if (id == 3) {
+  iframe.src = "https://www.youtube.com/embed/9KZyUQpihsE";
+} else if (id == 4) {
+  iframe.src = "https://www.youtube.com/embed/BydjQP2aFd0";
+} else if (id == 5) {
+  iframe.src = "https://www.youtube.com/embed/R991B2-W4uo";
+} else if (id == 6) {
+  iframe.src = "https://www.youtube.com/embed/4e414vW9gFs";
+} else if (id == 7) {
+  iframe.src = "https://www.youtube.com/embed/F3OxA9Cz17A";
+} else if (id == 8) {
+  iframe.src = "https://www.youtube.com/embed/FU_bAopCcSE";
+} else if (id == 9) {
+  iframe.src = "https://www.youtube.com/embed/-YHVFM_8a-s";
+} else if (id == 10) {
+  iframe.src = "https://www.youtube.com/embed/_4is7I_ZxTg";
+} else if (id == 11) {
+  iframe.src = "https://www.youtube.com/embed/HBsM5-G-Wco";
+} else if (id == 12) {
+  iframe.src = "https://www.youtube.com/embed/4cajBzu_N-g";
+}
+
+// Ou mudar o tamanho:
+iframe.width = "560";
+iframe.height = "350";
